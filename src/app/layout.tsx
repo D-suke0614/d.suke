@@ -18,12 +18,10 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${inter.className} mx-56`}>
         {children}
-      <footer className='py-12 mt-12 border-solid border-t border-[#484848]'>
-        <p>
-        ©︎d.suke 2024.
-        </p>
-      </footer>
-        </body>
+        <footer className="py-12 mt-12 border-solid border-t border-[#484848]">
+          <p>©︎d.suke 2024.</p>
+        </footer>
+      </body>
     </html>
   )
 }

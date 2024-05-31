@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,13 +18,28 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-6">Links</h2>
         <ul className="list-disc list-inside">
           <li className="pb-3 w-fit hover:underline">
-            <Link className="text-indigo-400" href={'https://github.com/D-suke0614'}>github.com</Link>
+            <Link
+              className="text-indigo-400"
+              href={'https://github.com/D-suke0614'}
+            >
+              github.com
+            </Link>
           </li>
           <li className="pb-3 w-fit hover:underline">
-            <Link className="text-indigo-400" href={'https://zenn.dev/d_suke0614'}>zenn.dev</Link>
+            <Link
+              className="text-indigo-400"
+              href={'https://zenn.dev/d_suke0614'}
+            >
+              zenn.dev
+            </Link>
           </li>
           <li className="pb-3 w-fit hover:underline">
-            <Link className="text-indigo-400" href={'https://twitter.com/0614d_suke'}>x.com</Link>
+            <Link
+              className="text-indigo-400"
+              href={'https://twitter.com/0614d_suke'}
+            >
+              x.com
+            </Link>
           </li>
         </ul>
       </section>
