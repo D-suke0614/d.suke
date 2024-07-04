@@ -1,5 +1,11 @@
 import Link from 'next/link'
 
+const LINKS = [
+  { href: 'https://github.com/D-suke0614', title: 'github.com' },
+  { href: 'https://zenn.dev/d_suke0614', title: 'zenn.dev' },
+  { href: 'https://twitter.com/0614d_suke', title: 'x.com' },
+]
+
 export default function Home() {
   return (
     <main className="flex flex-col gap-y-12">
@@ -19,30 +25,13 @@ export default function Home() {
       <section>
         <h2 className="text-3xl font-bold mb-6">Links</h2>
         <ul className="list-disc list-inside">
-          <li className="pb-3 w-fit hover:underline">
-            <Link
-              className="text-indigo-400"
-              href={'https://github.com/D-suke0614'}
-            >
-              github.com
-            </Link>
-          </li>
-          <li className="pb-3 w-fit hover:underline">
-            <Link
-              className="text-indigo-400"
-              href={'https://zenn.dev/d_suke0614'}
-            >
-              zenn.dev
-            </Link>
-          </li>
-          <li className="pb-3 w-fit hover:underline">
-            <Link
-              className="text-indigo-400"
-              href={'https://twitter.com/0614d_suke'}
-            >
-              x.com
-            </Link>
-          </li>
+          {LINKS.map((link) => (
+            <li key={link.href} className="pb-3 w-fit hover:underline">
+              <Link className="text-indigo-400" href={link.href}>
+                {link.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
     </main>
