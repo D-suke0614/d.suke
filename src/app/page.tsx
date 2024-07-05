@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="flex flex-col gap-y-12">
-      <section className="mt-12">
+      <section>
         <h2 className="text-3xl font-bold mb-6">Name</h2>
         <p className="text-[#e4e4e4]">Daisuke Kida.</p>
       </section>
