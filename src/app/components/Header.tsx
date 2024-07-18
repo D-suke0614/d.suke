@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header className="py-12 mb-12 flex items-center justify-between border-solid border-b border-[#484848]">
-      <h1 className="text-6xl font-bold inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-700">
+      <h1 className="text-6xl font-bold inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-700 hover:bg-gradient-to-r hover:from-indigo-100 hover:to-indigo-500">
         <Link href="/">d.suke</Link>
       </h1>
       <nav>
