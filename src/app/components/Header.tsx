@@ -11,12 +11,12 @@ const Header = () => {
           <li className="hover:text-indigo-300">
             <Link href="/about">About</Link>
           </li>
-          <li className="hover:text-indigo-300">
+          {/* <li className="hover:text-indigo-300">
             <Link href="/work">Work</Link>
           </li>
           <li className="hover:text-indigo-300">
             <Link href="/contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
