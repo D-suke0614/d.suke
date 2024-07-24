@@ -1,9 +1,21 @@
+'use client'
 import { postAction } from '../actions/postAction'
+import { useState } from 'react'
 
 const Page = () => {
+  const [formKey, setFormKey] = useState<string>('')
+
+  const handleAction = async (formData: FormData) => {
+    const result = await postAction(formData)
+    setFormKey(result.key)
+  }
   return (
     <main className="px-5">
-      <form action={postAction} className="flex flex-col gap-12">
+      <form
+        action={handleAction}
+        key={formKey}
+        className="flex flex-col gap-12"
+      >
         <label htmlFor="name">
           <input
             className="w-full p-2 bg-[#181818] border-solid border border-[#484848] rounded-md"
