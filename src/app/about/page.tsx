@@ -35,7 +35,7 @@ const Page = () => {
       </section>
       <section>
         <h2 className="text-3xl font-bold mb-6">Skills</h2>
-        <div className="flex items-center justify-center content-start flex-wrap gap-3">
+        <div className="grid grid-cols-5 gap-y-5">
           {ICONS.map((icon) => (
             <div
               key={icon.id}
@@ -46,10 +46,10 @@ const Page = () => {
           ))}
         </div>
       </section>
-      <section>
+      {/* <section>
         <h2 className="text-3xl font-bold mb-6">Careers</h2>
         <p className="text-[#e4e4e4]"></p>
-      </section>
+      </section> */}
     </main>
   )
 }
