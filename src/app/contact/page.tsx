@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { postAction } from '../actions/postAction'
 import { useState } from 'react'
 
@@ -11,7 +12,20 @@ const Page = () => {
   }
   return (
     <main className="px-5">
-      <form
+      <Link
+        className="text-indigo-400 text-xl hover:underline"
+        href={'https://x.com/0614d_suke'}
+      >
+        x.com
+      </Link>
+      <span>&nbsp;/&nbsp;</span>
+      <Link
+        className="text-indigo-400 text-xl hover:underline"
+        href={'https://github.com/D-suke0614'}
+      >
+        github
+      </Link>
+      {/* <form
         action={handleAction}
         key={formKey}
         className="flex flex-col gap-12"
@@ -52,7 +66,7 @@ const Page = () => {
         >
           Send Message
         </button>
-      </form>
+      </form> */}
     </main>
   )
 }
